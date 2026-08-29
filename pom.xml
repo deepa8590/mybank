@@ -21,11 +21,12 @@
             <artifactId>tomcat-embed-core</artifactId>
             <version>11.0.22</version>
         </dependency>
+       <!-- // Adding Jackson dependency for JSON serialization/deserialization & to give Servlet Json Capabilities -->
        <dependency>
             <groupId>tools.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>3.1.4</version>
-        </dependency>
+        </dependency> 
     </dependencies>
     <build>
         <!-- //packaging aplication into .jar file -->

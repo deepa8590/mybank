@@ -1,0 +1,13 @@
+.bloop/
+.metals/
+.vscode/
+.idea/
+*.iml
+
+# Maven build output
+/target/
+/dependency-reduced-pom.xml
+
+# OS files
+.DS_Store
+Thumbs.db

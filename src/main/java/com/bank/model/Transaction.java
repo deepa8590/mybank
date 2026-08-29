@@ -1,32 +1,34 @@
-package com.bank;
+package com.bank.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+
 //Creating an Transaction class to represent a bank transaction with attributes such as Id, amount, timestamp, and reference. The class includes constructors, getters, and setters for each attribute.
 public class Transaction {
-    private String Id;
+    private String id;
     private BigDecimal amount;
     private LocalDateTime timestamp;
-    private String Reference;
+
+    private String reference;
     
     public Transaction(){
 
     }
-    public Transaction(BigDecimal amount, LocalDateTime timestamp, String Reference) {
-        this.Id = UUID.randomUUID().toString();
+    public Transaction(BigDecimal amount, LocalDateTime timestamp, String reference) {
+        this.id = UUID.randomUUID().toString();
         this.amount = amount;
         this.timestamp = timestamp;
-        this.Reference = Reference;
+        this.reference = reference;
     }
 
     public String getId() {
-        return Id;
+        return id;
     }
 
     public void setId(String Id) {
-        this.Id = Id;
+        this.id = Id;
     }
 
     public BigDecimal getAmount() {
@@ -46,10 +48,10 @@ public class Transaction {
     }
 
     public String getReference() {
-        return Reference;
+        return reference;
     }
 
-    public void setReference(String Reference) {
-        this.Reference = Reference;
+    public void setReference(String reference) {
+        this.reference = reference;
     }
 }

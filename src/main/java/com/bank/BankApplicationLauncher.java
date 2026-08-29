@@ -5,6 +5,8 @@ import org.apache.catalina.LifecycleException;
 import org.apache.catalina.Wrapper;
 import org.apache.catalina.startup.Tomcat;
 
+import com.bank.web.MyBankServlet;
+
 public class BankApplicationLauncher {
     public static void main(String[] args) throws LifecycleException{
 
