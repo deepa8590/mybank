@@ -15,11 +15,7 @@ public class BankApplicationLauncher {
         Context ctx = tomcat.addContext("", null);
         Wrapper servlet = Tomcat.addServlet(ctx, "MyBankServlet", new MyBankServlet());
         servlet.setLoadOnStartup(1);
-        servlet.addMapping("/");
-
-
-
-    
+        servlet.addMapping("/*");
 
         tomcat.start();
     }
