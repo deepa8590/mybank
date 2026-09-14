@@ -5,8 +5,11 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import org.springframework.stereotype.Component;
+
 import com.bank.model.Transaction;
 
+@Component 
 public class TransactionService{
  
     List<Transaction> transactions = new CopyOnWriteArrayList<>();
